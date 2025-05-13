@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Local Handloom</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- header css -->
+    <link rel="stylesheet" href="css/header.css">
+    <!-- footer css -->
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- faq css -->
+    <link rel="stylesheet" href="css/faq.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Here are some of the most common queries from our customers.</p>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">1. What is the delivery time for handloom products?</button>
+                <div class="faq-answer">
+                    <p>Typically, it takes 7-10 business days for delivery, depending on your location.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">2. Can I return or exchange a product?</button>
+                <div class="faq-answer">
+                    <p>Yes, you can return or exchange products within 15 days of purchase with a valid reason.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">3. How can I track my order?</button>
+                <div class="faq-answer">
+                    <p>You can track your order through the 'Order Tracking' section on our website using your order ID.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">4. Do you offer international shipping?</button>
+                <div class="faq-answer">
+                    <p>Yes, we do offer international shipping with additional charges based on the destination.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">5. Are all products handmade?</button>
+                <div class="faq-answer">
+                    <p>Yes, all our products are handcrafted by skilled artisans using traditional techniques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <!-- FAQ Toggle Script -->
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+    <script src="js/comp.js"></script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rajeswari handloom</title>
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- header css -->
+  <link rel="stylesheet" href="css/header.css">
+  <!-- about css -->
+  <link rel="stylesheet" href="css/about.css">
+  
+  <!-- footer css -->
+  <link rel="stylesheet" href="css/footer.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <!-- Main Banner -->
+  <!-- Swiper Container -->
+  <div class="slider-wrapper">
+    <!-- Handcrafted Logo -->
+    <div class="hand-craft-logo">
+      <img src="/image/handcrafted-icon_100x.avif" alt="Handcrafted Logo">
+    </div>
+
+    <!-- Swiper Slider -->
+    <div class="swiper photo-slider">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img src="/image/banner2.webp" alt="Sale Banner 1">
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <img src="/image/banner1.webp" alt="Sale Banner 2">
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <img src="/image/banner3.webp" alt="Sale Banner 3">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+    <!-- WhatsApp Button -->
+  <a class="whatsapp-float" href="https://wa.me/1234567890" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <!-- Cookie Notice -->
+  <div class="cookie-banner" id="cookieBanner">
+    This website uses cookies to ensure you get the best experience on our website.
+    <a href="#">Privacy Policy</a>
+    <button onclick="hideCookieBanner()">Got it!</button>
+  </div>
+
+
+  <!-- About Section -->
+  <div id="about"></div>
+
+  <!-- features Section -->
+  <div id="features"></div>
+
+  <!-- collections Section -->
+  <div id="collections"></div>
+
+  <!-- kalamkari Section -->
+  <div id="kalamkari"></div>
+
+  <!-- kanjivaram Section -->
+  <div id="kanjivaram"></div>
+
+  <section class="soft-silk-section">
+    <h2 class="category-title">Tissue Slik</h2>
+    <div class="product-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card" onclick="toggleImage(this)">
+        <div class="image-container">
+          <img src="/image/saree10.webp" alt="Front View" class="front-image">
+          <img src="/image/saree10.webp" alt="Back View" class="back-image">
+          <div class="card-buttons">
+            <button class="quick-view">Quick View</button>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Handloom Sambalpuri Tissue Silk Saree</h3>
+          <p><del>₹ 36,996.95</del> <span class="price">₹ 29,597.56</span></p>
+          <div class="stars">★★★★☆</div>
+        </div>
+
+      </div>
+
+      <!-- Product 2 (Sold Out + Discount) -->
+      <div class="product-card" onclick="toggleImage(this)">
+        <div class="image-container">
+          <img src="/image/saree11.webp" alt="Front View" class="front-image">
+          <img src="/image/saree11.webp" alt="Back View" class="back-image">
+          <div class="card-buttons">
+            <button class="quick-view">Quick View</button>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Handloom Sambalpuri Tissue Silk Saree</h3>
+          <p><del>₹ 36,996.95</del> <span class="price">₹ 29,597.56</span></p>
+          <div class="stars">★★★★☆</div>
+        </div>
+
+      </div>
+
+      <!-- Product 3 (Hover Actions) -->
+      <div class="product-card" onclick="toggleImage(this)">
+        <div class="image-container">
+          <img src="/image/saree12.webp" alt="Front View" class="front-image">
+          <img src="/image/saree12.webp" alt="Back View" class="back-image">
+          <div class="card-buttons">
+            <button class="quick-view">Quick View</button>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Handloom Sambalpuri Tissue Silk Saree</h3>
+          <p><del>₹ 36,996.95</del> <span class="price">₹ 29,597.56</span></p>
+          <div class="stars">★★★★☆</div>
+        </div>
+
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card" onclick="toggleImage(this)">
+        <div class="image-container">
+          <img src="/image/saree13.webp" alt="Front View" class="front-image">
+          <img src="/image/saree13.webp" alt="Back View" class="back-image">
+          <div class="card-buttons">
+            <button class="quick-view">Quick View</button>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Handloom Sambalpuri Tissue Silk Saree</h3>
+          <p><del>₹ 36,996.95</del> <span class="price">₹ 29,597.56</span></p>
+          <div class="stars">★★★★☆</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="product-section">
+    <h2 class="category-title">Tusser Silk</h2>
+    <div class="product-grid">
+
+      <!-- Product Card -->
+      <div class="product-card" onclick="toggleImage(this)">
+        <div class="image-container">
+          <img src="/image/saree14.webp" alt="Front View" class="front-image">
+          <img src="/image/saree14.webp" alt="Back View" class="back-image">
+          <div class="card-buttons">
+            <button class="quick-view">Quick View</button>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Pastel Pink Handwoven Kanjivaram Silk Saree</h3>
+          <p><del>₹ 36,996.95</del> <span class="price">₹ 29,597.56</span></p>
+          <div class="stars">★★★★☆</div>
+        </div>
+
+      </div>
+
+      <div class="product-card" onclick="toggleImage(this)">
+        <div class="image-container">
+          <img src="/image/saree15.webp" alt="Front View" class="front-image">
+          <img src="/image/saree15.webp" alt="Back View" class="back-image">
+          <div class="card-buttons">
+            <button class="quick-view">Quick View</button>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Pastel Pink Handwoven Kanjivaram Silk Saree</h3>
+          <p><del>₹ 36,996.95</del> <span class="price">₹ 29,597.56</span></p>
+          <div class="stars">★★★★☆</div>
+        </div>
+      </div>
+      <div class="product-card" onclick="toggleImage(this)">
+        <div class="image-container">
+          <img src="/image/saree16.webp" alt="Front View" class="front-image">
+          <img src="/image/saree16.webp" alt="Back View" class="back-image">
+          <div class="card-buttons">
+            <button class="quick-view">Quick View</button>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Pastel Pink Handwoven Kanjivaram Silk Saree</h3>
+          <p><del>₹ 36,996.95</del> <span class="price">₹ 29,597.56</span></p>
+          <div class="stars">★★★★☆</div>
+        </div>
+
+      </div>
+    </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="highlight-metrics">
+    <h2>From Indian Artisans' Hands to Global Hearts!</h2>
+    <div class="metrics">
+      <div class="metric-item">
+        <h3>700</h3>
+        <p>Happy Customers Globally</p>
+      </div>
+      <div class="metric-item">
+        <h3>80</h3>
+        <p>Skilled Women Employed</p>
+      </div>
+      <div class="metric-item">
+        <h3>100</h3>
+        <p>Unique Weaves & Arts</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Image Slider -->
+  <div class="swiper main-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/image/model 1.webp" alt="Large Image 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="/image/model2.webp" alt="Large Image 2">
+      </div>
+
+
+      <!-- Add more slides as needed -->
+    </div>
+  </div>
+
+  <!-- Thumbnail Slider -->
+  <div class="swiper thumb-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/image/model 1.webp" alt="Thumb 1">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="/image/model2.webp" alt="Thumb 2">
+      </div>
+      <!-- Add more thumbnails as needed -->
+    </div>
+  </div>
+
+
+  <section class="testimonial-section">
+    <!-- Mobile Slider -->
+    <div class="info-slider-wrapper">
+      <div class="info-slider">
+        <div class="info-box">
+          <i class="fas fa-gift"></i>
+          <h3>Choose your Saree</h3>
+          <p>Browse our collection and find the saree that speaks to you</p>
+        </div>
+        <div class="info-box">
+          <i class="fas fa-cut"></i>
+          <h3>Customize Your Fit</h3>
+          <p>Enter your measurements and choose your blouse style</p>
+        </div>
+        <div class="info-box">
+          <i class="fas fa-shopping-cart"></i>
+          <h3>Delivered with Love</h3>
+          <p>Relax while we deliver your custom saree to your doorstep</p>
+        </div>
+      </div>
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <h2 class="testimonial-title">What Our Customers Say!</h2>
+    <p class="testimonial-subtitle">On Vayana Sarees</p>
+
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <img src="/image/cust1.avif" alt="Customer 1">
+        <div class="stars">★★★★★</div>
+        <p class="review">I was nervous about ordering a saree online, but everything changed... just beyond my
+          expectations!</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="/image/cust2.avif" alt="Customer 2">
+        <div class="stars">★★★★★</div>
+        <p class="review">Very neat work and authentic fabrics! I highly recommend Paaprika for online sarees.</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="/image/cust4.avif" alt="Customer 3">
+        <div class="stars">★★★★★</div>
+        <p class="review">First time ordering — both the sarees and dupattas were exactly as shown. Great decision!</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="/image/cust5.avif" alt="Customer 4">
+        <div class="stars">★★★★★</div>
+        <p class="review">My daughter ordered dupattas and they were excellent — timely delivery and great fabric!</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="top-selling">
+    <h2 class="section-title">Top Selling</h2>
+
+    <div class="products">
+      <div class="product-card" onclick="toggleImage(this)">
+        <div class="image-container">
+          <img src="/image/saree1.webp" alt="Front View" class="front-image">
+          <img src="/image/saree1-back.webp" alt="Back View" class="back-image">
+          <div class="card-buttons">
+            <button class="quick-view">Quick View</button>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Pastel Pink Handwoven Kanjivaram Silk Saree</h3>
+          <p><del>₹ 36,996.95</del> <span class="price">₹ 29,597.56</span></p>
+          <div class="stars">★★★★☆</div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <button class="view-more-btn">View More</button>
+  </section>
+
+  <section class="about-section">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>Celebrating Our Ancient Saree Arts</h2>
+        <p>
+          Nothing can replace the luxurious look of traditional handloom silk sarees! If you are in love with this
+          seamless attire, Paaprika is the right place. These absolute classics including Bandhini sarees, Kanjivaram
+          Sarees or Banarasi silk sarees and Chanderi Sarees are made for the most gracious moments! And we feel
+          perfectly proud as we bring this legacy to life in its most stunning forms!
+        </p>
+        <p>
+          Sarees are always the first choice when it comes to choosing the right wear for festivals and grand wedding
+          ceremonies. And we are here to make your tryst with sarees extremely beautiful and memorable with awesome
+          Paithanis or Patoalas or Kalamkari sarees delivered anywhere in India and USA! Be it the gorgeous chikankari
+          or enticing print of motifs; super neat embroidery or glittering embellishments or solid hues, our sarees
+          bring out feminine grace and beauty. Paaprika is committed to bring authentic handmade soft silk sarees online
+          to your doors from every corner of India.
+        </p>
+        <a href="#" class="about-btn">OUR STORY</a>
+      </div>
+      <div class="about-images">
+        <img src="/image/banner5.webp" class="img-main" alt="Model 1">
+
+      </div>
+    </div>
+  </section>
+  
+<div id="footer"></div>
+
+  
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/comp.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+
+
+  </script>
+</body>
+
+</html>

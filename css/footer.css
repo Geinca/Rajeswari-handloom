@@ -1,0 +1,96 @@
+.footer {
+  background:#800000;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 50px 20px 20px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-logo {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #f9d77e;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin: 8px 0;
+}
+
+.footer-col ul li a,
+.footer p,
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #f9d77e;
+}
+
+.newsletter form {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  padding-left: 15px;
+}
+
+.newsletter button {
+  padding: 8px 20px;
+  border-radius: 20px;
+  background: #f9d77e;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.payments img {
+  height: 25px;
+  margin: 0 5px;
+}
