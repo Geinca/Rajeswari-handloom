@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,21 +13,28 @@
     <link href="css/header.css" rel="stylesheet">
     <!-- footer CSS -->
     <link href="css/footer.css" rel="stylesheet">
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f8f9fa;
         }
 
-        .cart-header, .total-section {
+        .cart-header,
+        .total-section {
             color: #800000;
         }
 
-        .cart-table th, .cart-table td {
+        .cart-table th,
+        .cart-table td {
             vertical-align: middle;
         }
 
-        .price, .total-price {
+        .price,
+        .total-price {
             color: #800000;
             font-weight: bold;
         }
@@ -67,77 +75,79 @@
         }
     </style>
 </head>
+
 <body>
 
     <div id="header"></div>
 
-<div class="container mt-5">
-    <h2 class="cart-header">Shopping Cart</h2>
+    <div class="container mt-5">
+        <h2 class="cart-header">Shopping Cart</h2>
 
-    <div class="table-responsive">
-        <table class="table table-bordered cart-table mt-3">
-            <thead class="table-dark">
-                <tr>
-                    <th>Product</th>
-                    <th>Name</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                    <th>Total</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Sample Cart Item -->
-                <tr class="cart-item">
-                    <td><img src="/image/saree1.webp" alt="Product Image"></td>
-                    <td>Handloom Silk Saree</td>
-                    <td>
-                        <input type="number" value="1" min="1" class="form-control w-50">
-                    </td>
-                    <td class="price">₹ 29,597.56</td>
-                    <td class="total-price">₹ 29,597.56</td>
-                    <td><span class="remove-btn">Remove</span></td>
-                </tr>
+        <div class="table-responsive">
+            <table class="table table-bordered cart-table mt-3">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Product</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample Cart Item -->
+                    <tr class="cart-item">
+                        <td><img src="/image/saree1.webp" alt="Product Image"></td>
+                        <td>Handloom Silk Saree</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="form-control w-50">
+                        </td>
+                        <td class="price">₹ 29,597.56</td>
+                        <td class="total-price">₹ 29,597.56</td>
+                        <td><span class="remove-btn">Remove</span></td>
+                    </tr>
 
-                <tr class="cart-item">
-                    <td><img src="/image/saree2.webp" alt="Product Image"></td>
-                    <td>Traditional Silk Saree</td>
-                    <td>
-                        <input type="number" value="2" min="1" class="form-control w-50">
-                    </td>
-                    <td class="price">₹ 21,597.56</td>
-                    <td class="total-price">₹ 43,195.12</td>
-                    <td><span class="remove-btn">Remove</span></td>
-                </tr>
-            </tbody>
-        </table>
+                    <tr class="cart-item">
+                        <td><img src="/image/saree2.webp" alt="Product Image"></td>
+                        <td>Traditional Silk Saree</td>
+                        <td>
+                            <input type="number" value="2" min="1" class="form-control w-50">
+                        </td>
+                        <td class="price">₹ 21,597.56</td>
+                        <td class="total-price">₹ 43,195.12</td>
+                        <td><span class="remove-btn">Remove</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+            <h4 class="total-section">Cart Summary</h4>
+            <p>Subtotal: <span class="price">₹ 72,792.68</span></p>
+            <p>Discount: <span class="text-success">- ₹ 5,000.00</span></p>
+            <p>Total: <span class="price">₹ 67,792.68</span></p>
+            <button class="btn checkout-btn">Proceed to Checkout</button>
+        </div>
     </div>
 
-    <!-- Cart Summary -->
-    <div class="cart-summary">
-        <h4 class="total-section">Cart Summary</h4>
-        <p>Subtotal: <span class="price">₹ 72,792.68</span></p>
-        <p>Discount: <span class="text-success">- ₹ 5,000.00</span></p>
-        <p>Total: <span class="price">₹ 67,792.68</span></p>
-        <button class="btn checkout-btn">Proceed to Checkout</button>
-    </div>
-</div>
+    <div id="footer"></div>
 
-<div id="footer"></div>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    // Remove item functionality
-    const removeButtons = document.querySelectorAll('.remove-btn');
-    removeButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            this.closest('tr').remove();
-            alert('Item removed from cart!');
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Remove item functionality
+        const removeButtons = document.querySelectorAll('.remove-btn');
+        removeButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                this.closest('tr').remove();
+                alert('Item removed from cart!');
+            });
         });
-    });
-</script>
+    </script>
 
-<script src="js/comp.js"></script>
+    <script src="js/comp.js"></script>
 </body>
+
 </html>
