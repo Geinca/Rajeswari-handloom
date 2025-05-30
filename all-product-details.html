@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Details</title>
+  <link rel="stylesheet" href="/css/header.css" />
+</head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .product-detail-page {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 500px;
+  max-height: 600px; /* New line */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+
+.info-section h1 {
+  font-size: 28px;
+  color: #222;
+}
+
+.info-section del {
+  color: gray;
+}
+
+.info-section span#price {
+  color: #e53935;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.discount-tag {
+  background-color: #ff6f3c;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.features {
+  margin: 1rem 0;
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  margin-bottom: 0.5rem;
+}
+
+.add-to-cart {
+  padding: 10px 20px;
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+</style>
+<body>
+  <div id="header"></div>
+  <div class="product-detail-page">
+    <div class="image-section">
+      <img id="mainImage" src="" alt="Product Image" />
+    </div>
+    <div class="info-section">
+      <h1 id="productTitle"></h1>
+      <p><del id="oldPrice"></del> <span id="price"></span> <span class="discount-tag" id="discount"></span></p>
+      <p id="description"></p>
+      <ul class="features">
+        <li>✅ Premium Quality</li>
+        <li>🔒 Secure Checkout</li>
+        <li>🚚 Free Shipping</li>
+      </ul>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <script>
+    const products = {
+    4: {
+  title: "Handloom Sambalpuri Tissue Silk Saree",
+  image: "image/saree13.webp",
+  oldPrice: "₹ 36,996.95",
+  price: "₹ 29,597.56",
+  discount: "SAVE 20%",
+  description: `This exquisite Handloom Sambalpuri Tissue Silk Saree is a timeless blend of tradition and sophistication. 
+  Woven by master artisans using age-old techniques from Odisha, the saree features the signature Ikat patterns 
+  that are hand-dyed and meticulously aligned across the weft and warp. The fabric has a subtle shimmer 
+  due to its tissue silk base, lending it an ethereal look that's perfect for weddings, festivities, or 
+  cultural celebrations. `
+
+  
+}
+
+      // You can define more products with IDs here.
+    };
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get("id");
+    const product = products[id];
+
+    if (product) {
+      document.getElementById("mainImage").src = product.image;
+      document.getElementById("productTitle").textContent = product.title;
+      document.getElementById("oldPrice").textContent = product.oldPrice;
+      document.getElementById("price").textContent = product.price;
+      document.getElementById("discount").textContent = product.discount;
+      document.getElementById("description").textContent = product.description;
+    } else {
+      document.body.innerHTML = "<h2>Product not found.</h2>";
+    }
+  </script>
+
+
+  <script src="/js/comp.js"></script>
+</body>
+</html>
