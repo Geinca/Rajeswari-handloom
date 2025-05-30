@@ -235,9 +235,9 @@ body {
   opacity: 0;
 }
 
-.product-card:hover .front-image {
+/* .product-card:hover .front-image {
   opacity: 0;
-}
+} */
 
 .product-card:hover .back-image {
   opacity: 1;

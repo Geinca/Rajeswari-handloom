@@ -125,3 +125,12 @@ const swiper = new Swiper('.photo-slider', {
       dot.classList.add('active');
     });
   });
+
+
+  // Dynamically routing
+  function viewProductDetail(productId) {
+    // Store the clicked product ID in localStorage
+    localStorage.setItem("selectedProductId", productId);
+    // Redirect to the product-detail page
+    window.location.href = "product-detail.html";
+}
