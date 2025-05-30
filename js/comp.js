@@ -1,51 +1,46 @@
-// header
-fetch("./components/header.html")
+document.addEventListener('DOMContentLoaded', () => {
+  // Load header
+  fetch("./components/header.html")
     .then(response => response.text())
     .then(data => {
-      document.getElementById("header").innerHTML = data;
+      const header = document.getElementById("header");
+      if (header) header.innerHTML = data;
+      else console.warn("#header element not found");
     });
 
-// about
-fetch("./components/about.html")
+  // Load about
+  fetch("./components/about.html")
     .then(response => response.text())
     .then(data => {
-      document.getElementById("about").innerHTML = data;
+      const about = document.getElementById("about");
+      if (about) about.innerHTML = data;
+      else console.warn("#about element not found");
     });
 
-// features
-fetch("./components/features.html")
+  // Load features
+  fetch("./components/features.html")
     .then(response => response.text())
     .then(data => {
-      document.getElementById("features").innerHTML = data;
+      const features = document.getElementById("features");
+      if (features) features.innerHTML = data;
+      else console.warn("#features element not found");
     });
 
-// collections
-fetch("./components/collections.html")
+  // Load collections
+  fetch("./components/collections.html")
     .then(response => response.text())
     .then(data => {
-      document.getElementById("collections").innerHTML = data;
+      const collections = document.getElementById("collections");
+      if (collections) collections.innerHTML = data;
+      else console.warn("#collections element not found");
     });
 
-// kalamkari
-fetch("./components/kalamkari.html")
+  // Load footer
+  fetch("./components/footer.html")
     .then(response => response.text())
     .then(data => {
-      document.getElementById("kalamkari").innerHTML = data;
+      const footer = document.getElementById("footer");
+      if (footer) footer.innerHTML = data;
+      else console.warn("#footer element not found");
     });
-
-// kanjivaram
-fetch("./components/kanjivaram.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("kanjivaram").innerHTML = data;
-    });
-
-
-
-
-// footer
-fetch("./components/footer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("footer").innerHTML = data;
-    });
+});
