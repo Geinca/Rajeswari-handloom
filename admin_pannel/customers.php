@@ -60,7 +60,7 @@ $result = $conn->query($sql);
                 </thead>
                 <tbody>
                     <?php if ($result && $result->num_rows > 0): ?>
-                        <?php while ($row = $result->fetch_assoc()): ?>
+                        <?php while ($row = $result->fetch_assoc()): ?>!
                             <tr>
                                 <td class="border border-gray-300 px-4 py-2"><?= $row['id'] ?></td>
                                 <td class="border border-gray-300 px-4 py-2"><?= htmlspecialchars($row['name']) ?></td>

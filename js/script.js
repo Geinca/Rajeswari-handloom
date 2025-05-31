@@ -145,4 +145,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+<<<<<<< HEAD
+
+
+  // Dynamically routing
+  function viewProductDetail(productId) {
+    // Store the clicked product ID in localStorage
+    localStorage.setItem("selectedProductId", productId);
+    // Redirect to the product-detail page
+    window.location.href = "product-detail.html";
+}
+=======
 });
+>>>>>>> Jayashre2001
